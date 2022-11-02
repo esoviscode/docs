@@ -6,6 +6,7 @@ Dokumentacja powinna składać się z trzech głównych części:
 
 ## Project Making Process
 Dział dokumentacji opisujący proces tworzenia projektu. Dokumentacja w tym dziale powinna być na bieżąco uzupełniana, aby można było później łatwo zamienić ją w wymagane dokumenty wyspecyfikowane na SPG: https://projektgrupowy.eti.pg.edu.pl/pages/documents w zakładce **wzorce dokumentów**. Składa się z następujących części:
+
 ### Product:
 Plik markdownowy składający się z następujących paragrafów
 1. opis produktu -> ogólny kilkuzdaniowy opis celu projektu
@@ -13,10 +14,15 @@ Plik markdownowy składający się z następujących paragrafów
 
 ### Sprints:
 Folder, w którym każdy etap tworzenia projektu(sprint), będzie oddzielnym folderem składającym się z dwóch plików markdownowych:
+
 #### sprint plan
 w każdym pliku:
 1. ogólny opis etapu
-2. wyszczególnione konkretne zadania do wykonania w danym etapie i kto jest odpowiedzialny za te zadania (powinno sie tu wykorzystać taski z Jiry, ewentualnie troche je uogólnić na większe zadania, łącząc kilka tasków i zapisując je jako jedno zadanie)
+2. wyszczególnione konkretne zadania do wykonania w danym etapie i kto jest
+   odpowiedzialny za te zadania (powinno sie tu wykorzystać taski z Jiry,
+   ewentualnie troche je uogólnić na większe zadania, łącząc kilka tasków i
+   zapisując je jako jedno zadanie)
+
 #### sprint summary
 Dokument sporządzany po zakończeniu etapu, podsumowujący prace i wyniki, wyliczający zmiany względem początkowych planów, które nastąpiły podczas realizacji zadań(na przykład przełożenie jakichś czynności do kolejnego etapu lub całkowite z nich zrezygnowanie).
 
@@ -42,9 +48,7 @@ Część dokumentacji przeznaczona dla przyszłych użytkowników produktu. Powi
 ## Reference guide
 ### - Getting Started
 ### - {Module name}
-### .
-### .
-### .
+### [...]
 
 ## User guide
 ### - Getting Started
