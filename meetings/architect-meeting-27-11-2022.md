@@ -6,6 +6,8 @@ Rozplanowanie architektury projektu - modularnego monolitu. Moduły są od siebi
 - logiki gry
 - komunikacji z bazą danych
 
+Moduły składają się z submodułów. Moduł udostępnia na zewnątrz niektóre funkcjonalności submodułów.
+
 ## Moduł Discorda
 
 ### Opis
@@ -46,14 +48,40 @@ Moduł definiuje model danych
 ### Submoduły
 - moduł generowania grafik 
     - wygenerowanie mapy na podstawie widoku gracza
-- moduł danych
-- 
+- moduł danych 
+    - zawiera klasy np. gracz, istota, item, świat
+- moduł lobby
+    - tworzy i dodaje graczy do lobby
+- moduł fabuły i wydarzeń w grze
+    - wie o wszystkim co się dzieje w świecie gry
+    - wtrąca się w akcje istot
+    - podejmuje znaczące decyzje
+- moduł tur 
+    - wykonywanie tur istot
+    - w trakcie wykonywania akcji sprawdzenie w module fabuły i wydarzeń w grze czy nie nastąpiło zdarzenie wyjątkowe, które może zakończyć się przerwaniem akcji
+- moduł zarządzania postacią
+    - daje możliwość edycji ekwipunku i wyposażenia graczy
+    - udostępnia informacje o statystykach, ekwipunku i wyposażeniu gracza
+
 
 
 ## Moduł BD
 
 ### Opis
-Łączy się z bazą danych, udostępnia odpowiedni interfejs. *Wymagane!*: **REST API w springu**
+Łączy się z bazą danych, udostępnia odpowiedni interfejs. 
+Wstępna technologia: **Python Database API**
 
 ### Submoduły
+
+## Pętla gry - jedna iteracja
+
+Jedna tura wszystkich graczy i przeciwników
+
+- GM może coś wprowadzić do gry
+- Przejście przez wszystkie istoty zgodnie z ich inicjatywami i umożliwienie im wykonania ruchu/tury
+
+### Tura istoty:
+
+- Możliwość wykonania dowolnych akcji o ile pozwalają na to punkty akcji 
+- GM może przerwać akcję wprowadzając jakieś zmiany
 
