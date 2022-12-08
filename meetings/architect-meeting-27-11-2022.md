@@ -19,9 +19,10 @@ Moduł, który realizuje obsługę discord.py.
 
 ### Submoduły
 - communication - bezpośrednia komunikacja z graczem
-    - moduł odbierający
-    - moduł wysyłający
-    - moduł setup
+    - ~~moduł odbierający~~
+    - ~~moduł wysyłający~~
+    - ~~moduł setup~~
+    - każda komenda jest oddzielnym *modułem*
 - init - inicjalizacja bota
 
 
