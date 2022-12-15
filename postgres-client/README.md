@@ -1,39 +1,30 @@
-# Scripts
+# pgadmin4 and Postgres server
 
-# PGadmin console
+To launch docker containers with Postgres and pgadmin4 run command:
+```bash
+docker-compose up -d
+```
+Then open your browser and go to the url:
+```
+localhost:5555
+```
+E-mail:
+``` 
+esovisco@pg.edu.pl 
+```
+Password
+```
+1qazaq1
+ ```
+ After succesfull logging click Servers-> Register -> Server
 
-This script will automatically prepare a pgadmin console by running a docker
-container in the background. Buildbar servers are already added, you just need a
-password to access them.
+ ![image](https://cdn.discordapp.com/attachments/1044342494143451166/1053010730733027468/image.png)
 
-### Prerequisites
+Give the name of the  database.
+To connect client with database you have to know the ip of database.
+You can find it typing docker inspect (id of docker conatiner) in the Terminal, as a field IPAddress. Go to connection tab and insetr
+information presented below. Password is **admin**.
 
-Follow software installation instructions for your host system.
+![image](https://cdn.discordapp.com/attachments/1044342494143451166/1053012244507664515/image.png)
 
-- `docker` installed
-- `docker-compose` installed 
-
-- `docker` access without sudo
-  - `sudo groupadd docker`
-  - `sudo usermod -aG docker sally`
-
-### Running
-
-- `./run-pgadmin.sh`
-- URL and credentials are shown in the terminal
-- The passwords to our databases can be found in the master passwords file via
-  KeePass
-
-### Troubleshooting
-
-- Make sure all required software is installed
-
-- Stop pgadmin container
-  - `cd pgadmin`
-  - `docker compose down -v`
-
-- Wipe unused volumes and network sockets
-  - `docker volume prune`
-  - `docker network prune`
-
-- If any issues persist, please report them at https://github.com/buildbar/api/issues/new
+Click Save and you should be connected to postgres database.
